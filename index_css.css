@@ -1,83 +1,63 @@
+@font-face {
+    font-family: SeoulHangangB;
+    src:url('./fonts/SeoulHangangB.ttf');
+}
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
 
-.container div {
-    text-align: center;
-    display: table;
-}
-.container div span {
-    display: table-cell;
-    vertical-align: middle;
-}
-
 .top {
-    margin-top: 20px;
-    outline: 1px soid #9f9f9f;
-    width: 1920px;
-    height: 80px;
-    display: table;
-    background-color: #ff5eff;
-}
-
-.menu {
-    margin-top: 20px;
-    outline: 1px soid #9f9f9f;
-    width: 1920px;
-    height: 80px;
-    background-color: #ff5eff;
-}
-
-.middle {
-    margin-top: 20px;
-    width: 1000px;
-    height: 500px;
-    position: relative;
-}
-.middle-left {
-    outline: 1px solid #9f9f9f;
-    position: absolute;
-    top: 0px;
-    width: 600px;
-    height: 500px;
-    background-color: #00d8ff;
-}
-.middle-right {
-    position: absolute;
-    top: 0px;
-    left: 620px;
-    width: 380px;
-    height: 500px;
-}
-.middle-right-1 {
-    outline: 1px solid #9f9f9f;
-    width: 380px;
-    height: 150px;
-    background-color: #ff00dd;
-}
-.middle-right-2 {
-    outline: 1px solid #9f9f9f;
-    margin-top: 10px;
-    width: 380px;
-    height: 150px;
-    background-color: #ffe400;
-}
-.middle-right-3 {
-    outline: 1px solid #9f9f9f;
-    margin-top: 10px;
-    width: 380px;
-    height: 158px;
-    background-color: #99e000;
-}
-
-.botton {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    outline: 1px solid #9f9f9f;
     width: 1920px;
     height: 100px;
-    background-color: #5d5d5d;
-    color:#fff;
+    background-color: #50586C;
+    color: #DCE2F0;
+}
+.top p {
+    text-align: center;
+    font-family: 'SeoulHangangB';
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+
+a {
+    text-decoration: none; /*선으로 텍스트를 꾸밀 수 있게 해줌*/
+    color: #DCE2F0;
+}
+li {
+    list-style: none;
+    font-family: 'SeoulHangangB';
+}
+
+
+.menu {
+    width: 1920px;
+    height: 80px;
+    background-color: #50586C;
+}
+.menu ul li {
+    float: left;
+    width: 384px;
+    height: 100%;
+    line-height: 80px;
+    text-align: center;
+    background-color: #50586C;
+    font-size: 20px;
+}
+.menu ul li a {
+    display: block; /* a요소를 블록요소로 바꿈, li 전체 사이즈에서 링크가 걸리도록 변경 */
+}
+.menu ul li a:hover {
+    background: #2E3C7E;
+    color: #fff;
+}
+
+
+.body {
+    width: 1920px;
+    height: 789px;
+    background-color: #50586C;
 }
