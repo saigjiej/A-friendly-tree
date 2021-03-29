@@ -1,6 +1,7 @@
 @font-face {
     font-family: SeoulHangangB;
     src:url('./fonts/SeoulHangangB.ttf');
+    src:url('./fonts/나눔손글씨 딸에게 엄마가.ttf');
 }
 
 *{
@@ -8,47 +9,54 @@
     padding: 0px;
 }
 
-.top {
-    width: 1920px;
-    height: 100px;
-    background-color: #50586C;
-    color: #DCE2F0;
-}
-.top p {
-    text-align: center;
-    font-family: 'SeoulHangangB';
-    font-size: 40px;
-    padding-top: 30px;
+
+/*특정 부분 스크롤바 없애기*/ 
+body{ 
+    -ms-overflow-style: none; 
+} 
+::-webkit-scrollbar {
+    display: none; 
+} 
+.box { 
+    ms-overflow-style: none; 
+} 
+.box::-webkit-scrollbar{ 
+    display:none; 
 }
 
-.body {
-    width: 1920px;
-    height: 869px;
-    background-color: #50586C;
-}
 
+
+.main {
+    width: 100%;
+    height: 1100px;
+    position: relative;
+    background-image: url(garbage.jpg);
+    height: 100vh;
+    background-size: cover;
+
+}
 .title {
-    font-size: 75px;
+    font-size: 100px;
     font-family: 'SeoulHangangB';
     line-height: 110px;
-    padding-top: 100px;
-    padding-left: 130px;
-    color: #DCE2F0;
+    padding-top: 250px;
+    padding-left: 480px;
+    color: #000000;
+    font-style: bold;
 }
-
 .serve {
-    font-size: 23px;
+    font-size: 50px;
     font-family: 'SeoulHangangB';
     padding-top: 45px;
-    padding-left: 130px;
-    color: #DCE2F0;
+    padding-left: 630px;
+    color: #000000;
+    font-style: bold;
 }
-
 .menu1 {
-    font-size: 23px;
+    font-size: 30px;
     font-family: 'SeoulHangangB';
-    border: 2px solid #DCE2F0;
-    color: #DCE2F0;
+    border: 2px solid #000000;
+    color: #000000;
     width: 180px;
     height: 50px;
     text-align: center;
@@ -61,10 +69,10 @@
     border-bottom-right-radius: 50px 50px;
 }
 .menu2 {
-    font-size: 23px;
+    font-size: 30px;
     font-family: 'SeoulHangangB';
-    border: 2px solid #DCE2F0;
-    color: #DCE2F0;
+    border: 2px solid #000000;
+    color: #000000;
     width: 180px;
     height: 50px;
     text-align: center;
@@ -77,10 +85,10 @@
     border-bottom-right-radius: 50px 50px;
 }
 .menu3 {
-    font-size: 23px;
+    font-size: 30px;
     font-family: 'SeoulHangangB';
-    border: 2px solid #DCE2F0;
-    color: #DCE2F0;
+    border: 2px solid #000000;
+    color: #000000;
     width: 180px;
     height: 50px;
     text-align: center;
@@ -91,4 +99,57 @@
     border-top-right-radius: 50px 50px;
     border-bottom-left-radius: 50px 50px;
     border-bottom-right-radius: 50px 50px;
+}
+
+.Introduce {
+    width: 100%;
+    height: 1100px;
+    background-color: #50586C;
+}
+.introduce1 {
+    font-family: 'SeoulHangangB';
+    font-size: 60px;
+    padding-top:200px;
+    padding-left: 150px;
+    color: #DCE2F0;
+}.introduce2 {
+    font-family: 'SeoulHangangB';
+    font-size: 40px;
+    padding-top:40px;
+    padding-left: 150px;
+    color: #DCE2F0;
+}
+.introduce3 {
+    font-family: 'SeoulHangangB';
+    font-size: 40px;
+    padding-top:40px;
+    padding-left: 150px;
+    color: #DCE2F0;
+}
+.introduce4 {
+    font-family: 'SeoulHangangB';
+    font-size: 40px;
+    padding-top:40px;
+    padding-left: 150px;
+    color: #DCE2F0;
+}
+.introduce5 {
+    font-family: 'SeoulHangangB';
+    font-size: 40px;
+    padding-top:40px;
+    padding-left: 150px;
+    color: #DCE2F0;
+}
+.introduce6 {
+    font-family: 'SeoulHangangB';
+    font-size: 40px;
+    padding-top:40px;
+    padding-left: 150px;
+    color: #DCE2F0;
+}
+
+.footer {
+    width: 100%;
+    height: 200px;
+    background-color: ;
 }

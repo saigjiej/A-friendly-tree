@@ -1,0 +1,63 @@
+@font-face {
+    font-family: SeoulHangangB;
+    src:url('./fonts/SeoulHangangB.ttf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.top {
+    width: 1920px;
+    height: 100px;
+    background-color: #50586C;
+    color: #DCE2F0;
+}
+.top p {
+    text-align: center;
+    font-family: 'SeoulHangangB';
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+
+a {
+    text-decoration: none; /*선으로 텍스트를 꾸밀 수 있게 해줌*/
+    color: #DCE2F0;
+}
+li {
+    list-style: none;
+    font-family: 'SeoulHangangB';
+}
+
+
+.menu {
+    width: 1920px;
+    height: 80px;
+    background-color: #50586C;
+}
+.menu ul li {
+    float: left;
+    width: 384px;
+    height: 100%;
+    line-height: 80px;
+    text-align: center;
+    background-color: #50586C;
+    font-size: 20px;
+}
+.menu ul li a {
+    display: block; /* a요소를 블록요소로 바꿈, li 전체 사이즈에서 링크가 걸리도록 변경 */
+}
+.menu ul li a:hover {
+    background: #2E3C7E;
+    color: #fff;
+}
+
+
+.body {
+    width: 1920px;
+    height: 789px;
+    background-color: #50586C;
+}
