@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A friendly tree</title>
+    <link rel="stylesheet" type="text/css" href="reason.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <nav>
+                <div id="underline"></div>
+                <a href="#">분리수거를 해야하는 이유</a>
+                <a href="#">올바른 분리수거 방법</a>
+                <a href="#">새싹 키우기</a>
+                <a href="#">분리수거</a>
+                <a href="#">마이페이지</a>
+            </nav>
+        </div>
+        <script type="text/javascript">
+                var underline = document.querySelector('#underline');
+                var item = document.querySelectorAll('nav a');
+                function select(event){
+                    underline.style.left = event.offsetLeft+"px";
+                    underline.style.width = event.offsetWidth+"px";
+                }
+                item.forEach(link =>{
+                    link.addEventListener('click', (event)=>{
+                        select(event.target);
+                    })
+                })
+        </script>
+        <div class="section">
+            <div id="section1">
+                <img src="img/garbage2.jpg" alt="">
+                <p id="a">
+                    1
+                </p>
+                <p id="b">
+                    올바른 분리수거를 통해 쓰레기를 재활용하게 되면,<br>
+                    토양오염, 수질오염 등의 환경 오염을 줄여주고<br>
+                    쓰레기를 처리하면서 나오는 비용도<br>
+                    절약할 수 있다.
+                </p>
+            </div>
+            <div id="section2">
+                <img src="img/garbage3.jpg" alt="">
+                <p id="a">
+                    2
+                </p>
+                <p id="b">
+                    또 다시 활용을 하여<br>
+                    다른 제품으로 탄생하니 자원 활용도가 높아져<br>
+                    자원 절약의 대표적인 방법이 될 수 있다.
+                </p>
+            </div>
+            <div id="section3">
+                dfaf
+            </div>
+            <div id="section4">
+                dfaf
+            </div>
+            <div id="section5">
+                dfaf
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
