@@ -1,0 +1,165 @@
+@font-face {
+    font-family: SeoulHangangB;
+    src:url('./fonts/나눔손글씨 딸에게 엄마가.ttf');
+}
+
+/*특정 부분 스크롤바 없애기*/ 
+body{ 
+    -ms-overflow-style: none; 
+} 
+::-webkit-scrollbar {
+    display: none; 
+} 
+.box { 
+    ms-overflow-style: none; 
+} 
+.box::-webkit-scrollbar{ 
+    display:none; 
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SeoulHangangB';
+}
+.menu{
+    width: 1920px;
+    height: 85px;
+    background-color: #50586C;
+    
+}
+body{
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    min-height: 100vh;
+}
+nav{
+    position: relative;
+    display: flex;
+    margin-left: 500px;
+}
+nav a{
+    position: relative;
+    margin: 0 20px;
+    font-size:2em;
+    color:#ffffff;
+    text-decoration: none;
+    margin-top: 25px;
+}
+nav #underline{
+    position: absolute;
+    left: 0;
+    height: 4px;
+    width: 0;
+    background: #ffffff;
+    bottom: -9px;
+    transition: 0.2s;
+    border-radius: 5px;
+}
+
+.contents {
+    width: 1920px;
+    height: 884px;
+    background-color: #50586C;
+    text-align: center;
+}
+#contents1 {
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 120px;
+    font-size: 60px;
+}
+#contents1 img {
+    width: 100px;
+    height: 100px;
+    margin-top: 170px;
+}
+#contents1 p {
+    margin-top: 10px;
+}
+#contents2 {
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 120px;
+    font-size: 60px;
+}
+#contents2 img {
+    width: 100px;
+    height: 100px;
+    margin-top: 170px;
+}
+#contents2 p {
+    margin-top: 10px;
+}
+#contents3 {
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    margin-left: 660px;
+    margin-top: 120px;
+    font-size: 60px;
+}
+#contents3 img {
+    width: 100px;
+    height: 100px;
+    margin-top: 170px;
+}
+#contents3 p {
+    margin-top: 10px;
+}
+#contents4 {
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    margin-left: 970px;
+    margin-top: 120px;
+    font-size: 60px;
+}
+#contents4 img {
+    width: 100px;
+    height: 100px;
+    margin-top: 170px;
+}
+#contents4 p {
+    margin-top: 10px;
+}
+#contents5 {
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    margin-left: 1280px;
+    margin-top: 120px;
+    font-size: 60px;
+}
+#contents5 img {
+    width: 100px;
+    height: 100px;
+    margin-top: 170px;
+}
+#contents5 p {
+    margin-top: 10px;
+}
+#contents6 {
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    margin-left: 1590px;
+    margin-top: 120px;
+    font-size: 60px;
+}
+#contents6 img {
+    width: 100px;
+    height: 100px;
+    margin-top: 170px;
+}
+#contents6 p {
+    margin-top: 10px;
+}
+
