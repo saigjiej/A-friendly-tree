@@ -65,7 +65,7 @@ app.post('/register', function(req, res){
     "name": user.name,
     "email": user.email
   });
-  res.redirect('/practice?' + query);
+  res.redirect('/registerSuccess?' + query);
 });
 
 // 회원가입 버튼 클릭 시 라우터
@@ -75,9 +75,9 @@ app.get('/moveRegister', function(req, res) {
   });
 });
 
-app.get('/practice', function(req, res){
+app.get('/registerSuccess', function(req, res){
   var queryData = url.parse(req.url, true).query;
-  return res.render('practice',{
+  return res.render('registerSuccess',{
     name: String(queryData.name),
     email: String(queryData.email)
   });
@@ -121,7 +121,7 @@ app.post('/login', function(req, res) {
   const query = querystring.stringify({
     "email": req.body.email
   });
-  res.redirect('/practice2?' + query);
+  res.redirect('/loginSuccess?' + query);
 });
 
 // 로그인 버튼 클릭 시 라우터
@@ -131,12 +131,27 @@ app.get('/moveLogin', function(req, res) {
   });
 });
 
-app.get('/practice2', function(req, res){
+app.get('/loginSuccess', function(req, res){
   var queryData = url.parse(req.url, true).query;
   console.log(queryData.name);
-  return res.render('practice2',{
+  return res.render('loginSuccess',{
     name: String(queryData.name),
     email: String(queryData.email)
+  });
+});
+
+app.get('/private', function(req, res){
+  User.find()
+  .then(result => {
+    res.status(200).json({
+      UserDate:result
+    });
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json({
+      error: err
+    })
   });
 });
 
@@ -166,6 +181,47 @@ app.get("/logout", auth, (req, res) => {
       success: true,
     });
   });
+});
+
+// 5개의 상단 메뉴 라우터
+app.get('/reason', function(req, res){
+  res.render('reason', { title: 'reason' });
+});
+
+app.get('/way', function(req, res){
+  res.render('way', { title: 'way' });
+});
+
+app.get('/growing_sprouts', function(req, res){
+  res.render('growing_sprouts', { title: 'growing_sprouts' });
+});
+
+app.get('/machine', function(req, res){
+  res.render('machine', { title: 'machine' });
+});
+
+app.get('/mypage', function(req, res){
+  res.render('mypage', { title: 'mypage' });
+});
+
+// 종류별 라웉
+app.get('/styrofoam', function(req, res){
+  res.render('styrofoam', { title: 'styrofoam' });
+});
+app.get('/foodwaste', function(req, res){
+  res.render('foodwaste', { title: 'foodwaste' });
+});
+app.get('/glassbottle', function(req, res){
+  res.render('glassbottle', { title: 'glassbottle' });
+});
+app.get('/paper', function(req, res){
+  res.render('paper', { title: 'paper' });
+});
+app.get('/plastic', function(req, res){
+  res.render('plastic', { title: 'plastic' });
+});
+app.get('/four', function(req, res){
+  res.render('four', { title: 'four' });
 });
 
 app.listen(port, () => console.log(`listening on port ${port}`));
