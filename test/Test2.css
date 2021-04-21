@@ -1,0 +1,205 @@
+@keyframes move {
+    from { transform: translateX(0);}
+    to { transform: translateX(400px);}
+}
+@font-face {
+    font-family: SeoulHangangB;
+    src:url('./fonts/나눔손글씨 딸에게 엄마가.ttf');
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SeoulHangangB';
+    background-color: #50586C; ;
+}
+
+#main-menu{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+
+#main-menu {
+    margin-left: 26%;
+    
+}
+#main-menu > li {
+    float: left;
+    background: #50586C;
+}
+#main-menu > li > a {
+    color: #ffffff;
+    font-size: 30px;
+    display: block; /* 안쪽 여백용 */
+    padding: 12px 36px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    border-right: 1px solid rgba(0, 0, 0, 0, 15);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0, 2);
+}
+
+
+
+
+
+
+
+#content {
+  background-color: #50586C;
+  color: #fff;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 50px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "SeoulHangangB",
+    Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 36px;
+  font-size: 64px;
+  line-height: 96px;
+  width: 1024px;
+  margin: -50px 0 0 -500px;
+  text-align: center;
+  position: absolute;
+  z-index: 100;
+  top: 45%;
+  left: 50%;
+  transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+a:hover {
+  transform: scale(1.05);
+  letter-spacing: 40px;
+  transition: transform 0.2s cubic-bezier(0.19, 1, 0.22, 1),
+    letter-spacing 1.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+a:active {
+  transform: scale(0.95);
+  letter-spacing: 12px;
+  transition: transform 0.05s cubic-bezier(0.19, 1, 0.22, 1),
+    letter-spacing 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#holder {
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -410px 0 0 -400px;
+  opacity: 0.99;
+}
+
+#arcs {
+  width: 800px;
+  height: 800px;
+}
+
+@keyframes spinit {
+  0% {
+    transform: rotate(0);
+  }
+  49% {
+    transform: rotate(180deg);
+  }
+  51% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 18px;
+  border-color: #333D79 transparent transparent #FFB155;
+  animation-name: spinit;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+@media screen and (max-width: 1024px) {
+  #content {
+    transform: scale(0.7);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #content {
+    transform: scale(0.5);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #content {
+    margin-top: -70px;
+  }
+  h1 {
+    font-size: 20px;
+    margin-top: 480px;
+  }
+  a {
+    letter-spacing: 20px;
+  }
+  a:hover {
+    letter-spacing: 22px;
+  }
+}
+
+
+
+.text {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/garbage1.jpg);
+    position: absolute;
+    margin-top: 60%;
+}
+.title {
+    font-size: 4.4em;
+    font-family: 'SeoulHangangB';
+    color: #000000;
+    margin-left: 33%;
+    font-style: bold;
+}
+.introduce {
+    font-size: 2.3em;
+    font-family: 'SeoulHangangB';
+    color: #000000;
+    margin-left: 50px;
+    font-style: bold;
+}
+

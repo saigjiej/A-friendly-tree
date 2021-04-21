@@ -107,7 +107,7 @@ header .box > ul li {
   }
 }
 
-/*-------------------------------*/
+/*--------------------------------*/
 
 .title {
     color: black;
@@ -116,104 +116,71 @@ header .box > ul li {
     font-family: "나눔손글씨";
     font-size: 3em;
     padding-left: 22%;
+    z-index: 1;
 }
 
-.menu1 {
-    width: 1150px;
-    height: 350px;
-    background-color: royalblue;
+.underscore{
+    width: 400px;
+    height: 25px;
+    background-color: rosybrown;
     position: absolute;
-    margin-top: 13%;
-    margin-left: 20%;
-    background-image: url('img/garbage5.jpg');
-    background-size: cover;
-    color:white;
+    margin-top: 8.8%;
+    margin-left: 21%;
+    color: rosybrown;
+    opacity: 0.5;
+}
+
+.contents{
+    position: absolute;
+    width: 1000px;
+    height: 550px;
+    margin-left: 25.5%;
+    margin-top: 15%;
+    border: 1px solid black;
     font-family: "나눔손글씨";
-    font-size: 32px;
-    left: 1%;
-}
-.menu1 p {
-    padding-left: 40px;
+    color: black;
+    font-size: 2em;
 }
 
-.menu2 {
-    width: 1150px;
-    height: 350px;
-    background-color: royalblue;
-    position: absolute;
-    margin-top: 32%;
-    margin-left: 20%;
-    background-image: url('img/garbage3.jpg');
-    background-size: cover;
-    color:black;
-    font-family: "나눔손글씨";
-    font-size: 32px;
-    left: 1%;
+.text1 {
+    padding-left: 15px;
 }
-.menu2 p {
-    padding-left: 40px;
+.text2 {
+    padding-left: 15px;
 }
 
-.menu3 {
-    width: 1150px;
-    height: 350px;
-    background-color: royalblue;
-    position: absolute;
-    margin-top: 51%;
-    margin-left: 20%;
-    background-image: url('img/garbage4.jpg');
-    background-size: cover;
-    color:white;
-    font-family: "나눔손글씨";
-    font-size: 32px;
-    left: 1%;
-}
-.menu3 p {
-    padding-left: 40px;
+.text3 {
+    padding-left: 15px;
 }
 
-.menu4 {
-    width: 1150px;
-    height: 350px;
-    background-color: royalblue;
-    position: absolute;
-    margin-top: 70%;
-    margin-left: 20%;
-    background-image: url('img/garbage6.jpg');
-    background-size: cover;
-    color:white;
-    font-family: "나눔손글씨";
-    font-size: 32px;
-    left: 1%;
+.text4 {
+    padding-left: 15px;
 }
-.menu4 p {
-    padding-left: 40px;
+.text5 {
+    padding-left: 15px;
 }
 
-.menu5 {
-    width: 1150px;
-    height: 350px;
-    background-color: royalblue;
+button {
+    width: 120px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    box-shadow: 0 4px 16px rgba(0, 79, 255, 0.3);
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
     position: absolute;
-    margin-top: 89%;
-    margin-left: 20%;
-    background-image: url('img/garbage7.jpg');
-    background-size: cover;
-    color:white;
-    font-family: "나눔손글씨";
-    font-size: 32px;
-    left: 1%;
+    border: none;
+    transition: 0.3s;
+    margin-top: 45%;
+    margin-left: 71%;
 }
-.menu5 p {
-    padding-left: 40px;
+button:focus{
+    outline: 0;
+}
+button:hover{
+    background-color: rgba(0, 79, 255, 0.9);
+    cursor:pointer;
+    box-shadow: 0 2px 4px rgba(0, 79, 255, 0.6);
 }
 
-.menu6 {
-    width: 100%;
-    height: 50px;
-    background-color: white;
-    position: absolute;
-    margin-top: 107%;
-    background-size: cover;
-    color:white;
-}

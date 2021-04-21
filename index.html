@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head></head>
-    <!-- 메인 화면 -->
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A friendly tree</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./full-page-js/fullpage.min.css"/>
+    <link rel="stylesheet" href="./index.css"/>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./full-page-js/fullpage.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="main">
-            <!--<img src="garbage.jpg" >-->
-            <!--<img src="logo.jpeg" alt="">-->
-            <p class="title">당신은 재활용을 잘 하고 계시나요  ?</p>
+    <div id="full-page">
+        <div class="section s0">
+            <a href="signin_signup/login.html"><img class="signin" src="img/signin.png" alt=""></a>
+            <a href="signin_signup/signUp.html"><img class="signup" src="img/signup.png" alt=""></a>
+            <a href="reason.html"><img class="non-member" src="img/Non-members.png" alt=""></a>
+            <p class="title">당신은 재활용을 잘 하고 계시나요 ?</p>
             <p class="serve">재활용에 재미를 붙여주는 "정이 많은 나무"입니다</p>
-            <p class="menu1">로그인</p>
-            <p class="menu2">회원가입</p>
-            <p class="menu3">소개</p>
         </div>
-        <div class="Introduce">
+
+        <div class="section s1">
             <p class="introduce1">" 정이 많은 나무 " 란?</p>
             <p class="introduce2">제대로 된 분리수거를 알려주며 올바른 분리수거를 하도록 도와주는 서비스입니다 </p>
             <p class="introduce3">세상은 점점 발전하고 있지만 <br/>
@@ -33,9 +36,26 @@
             <p class="introduce6">분리수거 방법을 모르거나 분리수거를 하고 싶거나 분리수거로 지칠 때쯤 <br/>
                 정이 많은 나무를 찾아오세요! 항상 기다리고 있겠습니다 :)</p>
         </div>
-        
     </div>
 
-    
+    <script>
+        new fullpage("#full-page", {
+            licensKey: '',
+            sectionsColor: ['#ff0000', '#50586C'],
+            navigation: true,
+            navigationTooltips: ['Home', 'Introduce'],
+            scrollingSpeed: 1000,
+            onLeave: function(origin, destination, direction) { // 앞으로 올라갈 때 나오도록
+                if(origin.index == 1) {
+                    $('.s1 h3').hide();
+                }
+            },
+            afterLoad: function(origin, destination, direction) { // 뒤로 갈 때 나오도록
+                if(destination.index == 1) {
+                    $('.s1 h3').show();
+                }
+            }
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,91 @@
+/* index.css */
+@font-face {
+    font-family: SeoulHangangB;
+    src:url('./fonts/나눔손글씨 딸에게 엄마가.ttf');
+}
+.full-page {
+    width:device-width;
+}
+
+.section {
+    color: white;
+    font-family: 'SeoulHangangB';
+}
+.s0{
+    background-image: url('img/garbage1.jpg');
+    background-size: cover;
+    
+}
+
+
+.title {
+    color: #000000;
+    font-size: 100px;
+    padding-left: 25%;
+    padding-bottom: 50%;
+    position: absolute;
+    
+}
+.serve {
+    color: #000000;
+    font-size: 50px;
+    padding-left: 32%;
+    padding-top: 200px;
+    
+}
+.signin {
+    margin-left: 88.8%;
+    position: fixed;
+    top: 3%;
+    width: 40px;
+    height: 40px;
+}
+.signup {
+    position: fixed;
+    margin-left: 92%;
+    top: 3%;
+    width: 40px;
+    height: 40px;
+}
+.non-member {
+    position: fixed;
+    margin-left: 95%;
+    top: 3%;
+    width: 40px;
+    height: 40px;
+}
+
+.s1 {
+    font-size: 40px;
+    padding-left: 10%;
+}
+
+
+
+#asd button {
+    width: 400px;
+    height: 60px;
+    background-color: #004fff;
+    color: #ffffff;
+    box-shadow: 0 4px 16px rgba(0, 79, 255, 0.3);
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    position: absolute;
+    border: none;
+    transition: 0.5s;
+}
+#asd button:focus {
+    outline: 0;
+}
+#asd button:hover {
+    background-color: rgba(0, 79, 255, 0.9);
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 79, 255, 0.6);
+}
+
+.s1 h3 { 
+    display: none;
+}
+
+
