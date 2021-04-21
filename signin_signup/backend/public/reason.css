@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 나눔손글씨;
+    src:url('./fonts/나눔손글씨 딸에게 엄마가.ttf');
+}
+
+html,
+body {
+  background: #FFF;
+  color: #444;
+  font-family: 'Lato', sans-serif;
+  margin: 0 auto;
+  overflow-X: hidden;
+  overflow-Y: auto;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2744F4;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+}
+
+header,.container,.box {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+
+header {
+  background: #FFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  height: 60px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: initial;
+  z-index: 9;
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+  -moz-transform: matrix(1, 0, 0, 1, 0, 0);
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+header .box {
+  display: none;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 80px;
+  padding: 10px;
+}
+
+header .box > ul {
+  display: flex;
+}
+
+header .box > ul li {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#home {
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 2px #FFF, inset 0 0 0 3px #FF5959;
+  color: #FF5959;
+  display: block;
+  font-size: 32px;
+  height: 36px;
+  left: 0;
+  line-height: 36px;
+  margin: 10px 20px 10px 30px;
+  overflow: hidden;
+  padding: 2px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 36px;
+}
+
+@media only screen and (min-width: 520px) {
+  header .container {
+    max-width: 640px
+  }
+  header .box {
+    display: block;
+  }
+  section > h1 {
+    font-size: 3em
+  }
+}
+
+/*-------------------------------*/
+
+.title {
+    color: black;
+    padding-top: 5%;
+    position: absolute;
+    font-family: "나눔손글씨";
+    font-size: 3em;
+    padding-left: 22%;
+}
+
+.menu1 {
+    width: 1150px;
+    height: 350px;
+    background-color: royalblue;
+    position: absolute;
+    margin-top: 13%;
+    margin-left: 20%;
+    background-image: url('img/garbage5.jpg');
+    background-size: cover;
+    color:white;
+    font-family: "나눔손글씨";
+    font-size: 32px;
+    left: 1%;
+}
+.menu1 p {
+    padding-left: 40px;
+}
+
+.menu2 {
+    width: 1150px;
+    height: 350px;
+    background-color: royalblue;
+    position: absolute;
+    margin-top: 32%;
+    margin-left: 20%;
+    background-image: url('img/garbage3.jpg');
+    background-size: cover;
+    color:black;
+    font-family: "나눔손글씨";
+    font-size: 32px;
+    left: 1%;
+}
+.menu2 p {
+    padding-left: 40px;
+}
+
+.menu3 {
+    width: 1150px;
+    height: 350px;
+    background-color: royalblue;
+    position: absolute;
+    margin-top: 51%;
+    margin-left: 20%;
+    background-image: url('img/garbage4.jpg');
+    background-size: cover;
+    color:white;
+    font-family: "나눔손글씨";
+    font-size: 32px;
+    left: 1%;
+}
+.menu3 p {
+    padding-left: 40px;
+}
+
+.menu4 {
+    width: 1150px;
+    height: 350px;
+    background-color: royalblue;
+    position: absolute;
+    margin-top: 70%;
+    margin-left: 20%;
+    background-image: url('img/garbage6.jpg');
+    background-size: cover;
+    color:white;
+    font-family: "나눔손글씨";
+    font-size: 32px;
+    left: 1%;
+}
+.menu4 p {
+    padding-left: 40px;
+}
+
+.menu5 {
+    width: 1150px;
+    height: 350px;
+    background-color: royalblue;
+    position: absolute;
+    margin-top: 89%;
+    margin-left: 20%;
+    background-image: url('img/garbage7.jpg');
+    background-size: cover;
+    color:white;
+    font-family: "나눔손글씨";
+    font-size: 32px;
+    left: 1%;
+}
+.menu5 p {
+    padding-left: 40px;
+}
+
+.menu6 {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    margin-top: 107%;
+    background-size: cover;
+    color:white;
+}
